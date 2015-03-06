@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IkD-GH-qIP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qkY-As-nfx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="5Zp-0Z-IAD">
@@ -64,7 +65,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="109" width="266" height="72"/>
+                                    <rect key="frame" x="16" y="100" width="266" height="39"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KGR-iM-jv7">
@@ -103,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yti-QK-jlW"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-2B-T6C">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="147" width="266" height="34"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="TeV-Ps-pwA"/>
                                 <exclude reference="Ucj-je-uI7"/>
                                 <exclude reference="eFB-K4-E9t"/>
+                                <exclude reference="Mxw-2B-T6C"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="TeV-Ps-pwA"/>
                                 <include reference="Ucj-je-uI7"/>
                                 <include reference="eFB-K4-E9t"/>
+                                <include reference="Mxw-2B-T6C"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="TeV-Ps-pwA" id="bNR-b6-wVh"/>
                         <outlet property="mailButton" destination="eFB-K4-E9t" id="lnj-PQ-Ax7"/>
                         <outlet property="messageLabel" destination="0b4-Lz-wKa" id="to7-1k-ZIK"/>
+                        <outlet property="nameLabel" destination="Mxw-2B-T6C" id="by5-Gz-wd1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
